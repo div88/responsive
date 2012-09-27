@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <title>ResponsiveWebPage</title>
+        <link rel="stylesheet" type="text/css" href="style1.css"/>
+    </head>
+    <body>
+     
+
+ <div class="wrapper">
+            <div class="header">
+                <h1>Responsive Web Design</h1>
+                <ul class="nav">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="aboutMe.html">About</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <ol class="main-list">
+                    <li>Target Resolutions and Devices</li>
+                        <p>
+                            Different kinds of devices have accessibility to web and in the future there will be a lot more new devices
+                            with different resolutions which will have access to web. The first thing to be done before making a website
+                            responsive is to decide the target devices or resolutions. Not all devices that have access to web need to be
+                            included as targets.
+                        </p>
+
+                    <li>Using Media Query</li>
+                        <p>
+                            Media queries specify the look of content by selecting the different styles based on media type and/or
+                            features
+                        </p>
+                        
+                    <p>A media query needs :
+                    @media Media type and (Media feature) {
+                                            /* Styles to be applied */
+                      }
+                    </p>
+                    
+                    <p>
+                        Media Type: Media type specifies the way in which the website will be rendered on different media. The media types supported are :
+                        all, aural, braille, handheld, print, projection, screen, tty, tv, embossed
+                    </p>
+                    
+                    <p>
+                        Media Feature: Media features are the constraints depending on which websites render different styles
+                        when the conditions are satisfied. Listed below are the different media features available.
+                    </p>
+                    <p>
+                        Commonly used are width, max-width and min-width. The available media features are : width, min-width,
+                        max-width, height, min-height, max-height, device-width, min-device-width, max-device-width, device-height, min-device-height, index, min-color-index, max-color-index, monochrome, resolution, scan, grid. 
+                        Usage of media query.
+                    </p>
+                    </p>
+                    <p>
+                        Used in stylesheets:
+                        @media screen and (min-width:600px) and (max-width:960px)
+                        { / Styles to be applied when the condition is satisfied/ }
+                    </p>
+                    
+                    <p>An inline example:</p>
+                    <code>
+                        <link rel="stylesheet" href="responsive/320px_to_767px.css" 
+                        media="screen and (min-width:320px)and (max-width:767px)"/>
+                    </code>
+                                                         
+                    <li>Using viewport meta tag</li>
+                    <p>
+                        Viewport meta tag is used to control the rendering of content  on mobile devices. 
+                        Using viewport metatag
+                    </p>
+                    
+                    <p>
+                        Without the viewport meta tag the mobile devices will not be able to calculate the device width and
+                        hence won't fetch the related stylesheet.
+                    </p>
+                    <p>The syntax is:
+                        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+                        <ul>
+                            <li>width: describes the width of the viewport. It can either be set to a specific width or to device-width</li>
+                            <li>where it calculates the width of the different devices accessing it.</li>
+                            <li>scale: the scale properties in the viewport meta tag describes the zoom level.</li>
+                            <li>initial-scale: The zoom level at which the user sees the page first.</li>
+                            <li>user_scalable:  This property lets the user zoom the browser window. It can be set to “yes” or “no”</li>
+                            <li>depending on which the browser’s zooming capacity is set.</li>
+                        </ul>
+                    </p>
+                    
+                    <li>Flexible Layout</li>
+                    <p>
+                        Flexible layout can be achieved by using percentages instead of fixed pixels. em's should not be used
+                        instead of percentages. em is a unit of measurement for typography which should be mainly used for fonts.
+                        By using flexible layout the elements adjust their size to fit in the container holding the element.
+                        Using of pixels will make web pages dynamic and the user will not be able to see the contents.
+                    </p>
+                    
+                    <li>Flexible media</li>
+                    <p>
+                        It refers to media which responds and adapts itself to the layout/viewport on which the website is
+                        being viewed.
+                    </p>
+                    
+                    <p>
+                        Fluid media can be achieved by :
+                        setting the max-width of media to 100%: In this case the media will take the width of the container of
+                        the media. Setting the width in percentage: In this case based on percentage value the media resizes itself.
+                    </p>
+                     
+                    <li>Page structure</li>
+                    <p>
+                        Having a well architectured page will help in making the web page responsive: in a wide screen device
+                        the page has different sections on left and right; in small screens, the right section falls under the
+                        left.
+                    </p>
+                
+                </ol>
+            </div>
+            <div class="footer">
+                <ul class="footer-nav">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="aboutMe.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+</html>
